@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+    <title>SignUp</title>
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="flex text-white relative" style="font-family: 'Itim', cursive;">
+      <!-- Image -->
+      <div class="image-wrapper w-1/2 lg:w-2/5 h-screen relative hidden sm:block">
+        <img
+          class="w-full h-full object-cover"
+          src="images/wallpaper2.jpg"
+          alt=""
+        />
+        <!-- Logo -->
+        <div class="absolute top-36 w-full h-36 bg-black bg-opacity-50">
+          
+        </div>
+        <!-- Photo Credit -->
+        <div class="absolute bottom-2 right-2">
+          Photo by
+          <a
+            href="https://unsplash.com/@valentinsteph"
+            target="_blank"
+            class="text-purple-400 hover:text-white duration-500"
+            >Stéphan Valentin</a
+          >
+          from
+          <a
+            href="https://unsplash.com/"
+            target="_blank"
+            class="text-yellow-300 hover:text-white duration-500"
+            >Unsplash</a
+          >
+        </div>
+      </div>
+      <!-- Right Content -->
+      <div class="form w-full sm:w-1/2 lg:w-3/5 h-screen bg-neutral-900 flex flex-col gap-2 lg:gap-5 justify-center bottom-5">
+        <h2 class="ml-16 text-2xl w-3/4">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <i class="text-pink-300">now</i> to get started.</h2>
+        <div class="bg-neutral-800 w-full lg:h-2/5 flex flex-col justify-center p-5 pl-16 lg:p-16 shadow-xl">
+          <h2 class="text-3xl text-pink-500">Lets do this!</h2>
+          <form class="uppercase flex flex-wrap" id="form">
+            <div class="input basis-full lg:basis-1/2 flex flex-col mt-2 lg:mt-3 group">
+              <label for="name" class="group-focus-within:text-pink-500 group-focus-within:duration-500 text-pink-200 ">
+                First Name *
+              </label>
+              <input type="text" id="name" class="w-1/2 sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
+            </div>
+            <div class="input basis-full lg:basis-1/2 flex flex-col mt-2 lg:mt-3 group ">
+              <label for="lastName" class="group-focus-within:text-pink-500 group-focus-within:duration-500 text-pink-200">
+                Last Name *
+              </label>
+              <input type="text" id="lastName" class="w-1/2 sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
+            </div>
+            <div class="input basis-full lg:basis-1/2 flex flex-col mt-2 lg:mt-3 group ">
+              <label for="mail" class="group-focus-within:text-pink-500 group-focus-within:duration-500 text-pink-200">
+                email *
+              </label>
+              <input type="email" id="mail" class="w-1/2 sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
+            </div>
+            <div class="input basis-full lg:basis-1/2 flex flex-col mt-2 lg:mt-3 group ">
+              <label for="phone" class="group-focus-within:text-pink-500 group-focus-within:duration-500 text-pink-200">
+                Phone Number
+              </label>
+              <input type="text" id="phone" class="w-1/2 sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indentwhite-pink-300">
+            </div>
+            <div class="input basis-full lg:basis-1/2 flex flex-col mt-2 lg:mt-3 group ">
+              <label for="password" class="group-focus-within:text-pink-500 group-focus-within:duration-500 text-pink-200">
+                Password *
+              </label>
+              <input type="password" id="password" class="w-1/2 sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
+            </div>
+            <div class="input basis-full lg:basis-1/2 flex flex-col mt-2 lg:mt-3 group ">
+              <label for="confirmPassword" class="group-focus-within:text-pink-500 group-focus-within:duration-500 text-pink-200">
+                Confirm Password
+              </label>
+              <input type="password" id="confirmPassword" class="w-1/2 sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
+            </div>
+          </form>
+        </div>
+        <button type="submit" form="form" class="ml-16 py-1 px-4 w-36 border border-pink-200 rounded-md hover:bg-pink-600 hover:border-pink-500 hover:text-black tracking-widest hover:duration-500">Sign Up</button>
+        <p class="ml-16">Already have an account? <a href="#" class="text-pink-400 hover:text-pink-200 duration-500">Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>
