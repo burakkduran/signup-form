@@ -10,6 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
     <title>SignUp</title>
+    <style>
+      @font-face {
+        font-family: odin;
+        src: url(Norse-Bold.otf);
+      }
+    </style>
   </head>
   <body>
     <!-- Main Container -->
@@ -22,8 +28,9 @@
           alt=""
         />
         <!-- Logo -->
-        <div class="absolute top-36 w-full h-36 bg-black bg-opacity-50">
-          
+        <div class="absolute top-36 w-full h-36 bg-black bg-opacity-50 flex justify-center items-center lg:gap-8">
+          <img src="images/odin.png" alt="Odin Logo" class="h-full p-2">
+          <p class="text-7xl md:text-8xl" style="font-family: odin;">The ODIN</p>
         </div>
         <!-- Photo Credit -->
         <div class="absolute bottom-2 right-2">
@@ -46,44 +53,44 @@
       <!-- Right Content -->
       <div class="form w-full sm:w-1/2 lg:w-3/5 h-screen bg-neutral-900 flex flex-col gap-2 lg:gap-5 justify-center bottom-5">
         <h2 class="ml-16 text-2xl w-3/4">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <i class="text-pink-300">now</i> to get started.</h2>
-        <div class="bg-neutral-800 w-full lg:h-2/5 flex flex-col justify-center p-5 pl-16 lg:p-16 shadow-xl">
+        <div class="bg-neutral-800 w-full lg:h-2/5 flex flex-col justify-center p-5 sm:pl-16 lg:p-16 shadow-xl items-center sm:items-baseline my-5">
           <h2 class="text-3xl text-pink-500">Lets do this!</h2>
-          <form class="uppercase flex flex-wrap" id="form">
+          <form class="uppercase flex flex-wrap w-2/3 sm:w-full" id="form">
             <div class="input basis-full lg:basis-1/2 flex flex-col mt-2 lg:mt-3 group">
               <label for="name" class="group-focus-within:text-pink-500 group-focus-within:duration-500 text-pink-200 ">
                 First Name *
               </label>
-              <input type="text" id="name" class="w-1/2 sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
+              <input type="text" id="name" class="sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
             </div>
             <div class="input basis-full lg:basis-1/2 flex flex-col mt-2 lg:mt-3 group ">
               <label for="lastName" class="group-focus-within:text-pink-500 group-focus-within:duration-500 text-pink-200">
                 Last Name *
               </label>
-              <input type="text" id="lastName" class="w-1/2 sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
+              <input type="text" id="lastName" class="sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
             </div>
             <div class="input basis-full lg:basis-1/2 flex flex-col mt-2 lg:mt-3 group ">
               <label for="mail" class="group-focus-within:text-pink-500 group-focus-within:duration-500 text-pink-200">
                 email *
               </label>
-              <input type="email" id="mail" class="w-1/2 sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
+              <input type="email" id="mail" class="sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
             </div>
             <div class="input basis-full lg:basis-1/2 flex flex-col mt-2 lg:mt-3 group ">
               <label for="phone" class="group-focus-within:text-pink-500 group-focus-within:duration-500 text-pink-200">
                 Phone Number
               </label>
-              <input type="text" id="phone" class="w-1/2 sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indentwhite-pink-300">
+              <input type="text" id="phone" class="sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indentwhite-pink-300">
             </div>
             <div class="input basis-full lg:basis-1/2 flex flex-col mt-2 lg:mt-3 group ">
               <label for="password" class="group-focus-within:text-pink-500 group-focus-within:duration-500 text-pink-200">
                 Password *
               </label>
-              <input type="password" id="password" class="w-1/2 sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
+              <input type="password" id="password" class="sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
             </div>
             <div class="input basis-full lg:basis-1/2 flex flex-col mt-2 lg:mt-3 group ">
               <label for="confirmPassword" class="group-focus-within:text-pink-500 group-focus-within:duration-500 text-pink-200">
                 Confirm Password
               </label>
-              <input type="password" id="confirmPassword" class="w-1/2 sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
+              <input type="password" id="confirmPassword" class="sm:w-2/3 bg-transparent border border-pink-200 rounded-md mt-1 md:mt-2 p-1 focus:outline-none focus:border focus:border-pink-500 focus:duration-500 focus:transition indent-1 text-white" required>
             </div>
           </form>
         </div>
